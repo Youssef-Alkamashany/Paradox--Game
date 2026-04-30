@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b048d0w04smq8"
+path="res://.godot/imported/the_mountain-game-game-music-508018 - Copy.mp3-ae7cc6e992f3245f36ce68b636915f2b.mp3str"
+
+[deps]
+
+source_file="res://the_mountain-game-game-music-508018 - Copy.mp3"
+dest_files=["res://.godot/imported/the_mountain-game-game-music-508018 - Copy.mp3-ae7cc6e992f3245f36ce68b636915f2b.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

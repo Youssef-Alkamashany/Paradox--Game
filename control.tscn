@@ -1,0 +1,113 @@
+[gd_scene format=3 uid="uid://cfy4x6s6h564y"]
+
+[ext_resource type="Script" uid="uid://dkfxlyxfnrpkn" path="res://control.gd" id="1_qtu10"]
+[ext_resource type="Texture2D" uid="uid://dd2l62ww7407u" path="res://png/Gemini_Generated_Image_lahhejlahhejlahh.png" id="2_ee4bf"]
+[ext_resource type="Texture2D" uid="uid://br43prf11grhw" path="res://png/ballBlue.png" id="3_kbped"]
+
+[sub_resource type="FontVariation" id="FontVariation_fj5cn"]
+
+[sub_resource type="FontVariation" id="FontVariation_iy58a"]
+
+[sub_resource type="FontVariation" id="FontVariation_6a6wx"]
+
+[node name="Control" type="Control" unique_id=1602688718]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qtu10")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1945821431]
+texture_filter = 1
+custom_minimum_size = Vector2(0, 4)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_ee4bf")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="TextureRect" unique_id=1590983622]
+
+[node name="Title" type="Label" parent="TextureRect" unique_id=774574070]
+layout_mode = 0
+offset_left = 114.0
+offset_top = 31.0
+offset_right = 990.0
+offset_bottom = 196.0
+pivot_offset = Vector2(930, -253)
+theme_override_colors/font_color = Color(1, 1, 0.050980393, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0.3372549, 1)
+theme_override_fonts/font = SubResource("FontVariation_fj5cn")
+theme_override_font_sizes/font_size = 100
+text = "\" Paradox_Game \""
+
+[node name="Play" type="Button" parent="." unique_id=1965262042]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.24100001
+anchor_top = 0.564
+anchor_right = 0.24100001
+anchor_bottom = 0.564
+offset_left = 417.36798
+offset_top = -40.472015
+offset_right = 626.368
+offset_bottom = 104.527985
+theme_override_colors/font_color = Color(0, 0.8745098, 0.06666667, 1)
+theme_override_colors/font_focus_color = Color(0.0016609204, 0.026785154, 1.504086e-09, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 0.5019608)
+theme_override_fonts/font = SubResource("FontVariation_iy58a")
+theme_override_font_sizes/font_size = 100
+text = "Play"
+
+[node name="Exit" type="Button" parent="Play" unique_id=48587355]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -4.256
+anchor_top = -2.197
+anchor_right = -4.256
+anchor_bottom = -2.197
+offset_left = 455.50403
+offset_top = 318.565
+offset_right = 641.504
+offset_bottom = 463.565
+theme_override_colors/font_color = Color(0, 0.79268634, 0.5208877, 1)
+theme_override_font_sizes/font_size = 100
+text = "Exit"
+
+[node name="Team" type="Button" parent="." unique_id=1443575538]
+layout_mode = 0
+offset_left = -80.0
+offset_top = 495.0
+offset_right = 277.0
+offset_bottom = 677.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.93333334, 0.8666667, 0, 1)
+theme_override_colors/font_disabled_color = Color(0.9372549, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_6a6wx")
+theme_override_font_sizes/font_size = 30
+text = "Made by
+Aura_Team
+"
+flat = true
+
+[node name="BallBlue" type="Sprite2D" parent="." unique_id=1588647629]
+position = Vector2(1108.0001, 591.00006)
+scale = Vector2(2.909086, 3.0227244)
+texture = ExtResource("3_kbped")
+
+[connection signal="focus_entered" from="Play" to="." method="_on_play_focus_entered"]
+[connection signal="mouse_entered" from="Play" to="." method="_on_play_mouse_entered"]
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="focus_exited" from="Play/Exit" to="." method="_on_exit_focus_exited"]
+[connection signal="mouse_exited" from="Play/Exit" to="." method="_on_exit_mouse_exited"]
+[connection signal="pressed" from="Play/Exit" to="." method="_on_exit_pressed"]

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dlemj0hha1hpj"]
+
+[ext_resource type="AudioStream" uid="uid://b048d0w04smq8" path="res://the_mountain-game-game-music-508018 - Copy.mp3" id="1_e463j"]
+
+[node name="Paradox music" type="AudioStreamPlayer2D" unique_id=525224108]
+stream = ExtResource("1_e463j")
+autoplay = true

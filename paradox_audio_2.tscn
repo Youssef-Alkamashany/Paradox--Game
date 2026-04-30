@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dk6aeuljcf3t8"]
+
+[ext_resource type="AudioStream" uid="uid://bme4m1w1m74gf" path="res://viacheslavstarostin-gaming-game-video-game-music-474517.mp3" id="1_nfhp3"]
+
+[node name="Paradox Audio 2" type="AudioStreamPlayer2D" unique_id=576471588]
+stream = ExtResource("1_nfhp3")
+autoplay = true
+area_mask = 0
