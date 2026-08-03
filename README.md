@@ -17,6 +17,22 @@
 
 ---
 
+### 🖼️ Gameplay Screenshots
+
+<div align="center">
+
+| Main Menu & Title | Space Level Dynamics |
+| :---: | :---: |
+| <img src="https://raw.githubusercontent.com/Youssef-Alkamashany/Paradox--Game/main/Paradox-Game-1.png" width="400"/> | <img src="https://raw.githubusercontent.com/Youssef-Alkamashany/Paradox--Game/main/Paradox-Game-2.png" width="400"/> |
+
+| Brick Destruction & Physics | Game Over & Stats Screen |
+| :---: | :---: |
+| <img src="https://raw.githubusercontent.com/Youssef-Alkamashany/Paradox--Game/main/Paradox-Game-3.png" width="400"/> | <img src="https://raw.githubusercontent.com/Youssef-Alkamashany/Paradox--Game/main/Paradox-Game-4.png" width="400"/> |
+
+</div>
+
+---
+
 ### 🚀 Core Mechanics & Features
 * **Advanced Physics Engine:** Leveraging Godot's rigid body dynamics to simulate high-fidelity ball-to-brick interactions.
 * **GDScript-Powered Logic:** Custom-built game controllers and physics modifiers written in optimized **GDScript**.
@@ -28,7 +44,7 @@
 ### 🛠️ Technical Implementation
 | Component | Technology | Implementation Detail |
 | :--- | :--- | :--- |
-| **Engine** | Godot 4.x | Utilizing the latest Vulcan renderer and enhanced physics nodes. |
+| **Engine** | Godot 4.x | Utilizing the latest Vulkan renderer and enhanced physics nodes. |
 | **Scripting** | GDScript | Core game loops, paddle movement, and signal-based event handling. |
 | **Physics** | 2D/3D Dynamics | Managing collisions, elasticities, and kinetic energy transfers. |
 | **Architecture** | Node-Based | Organized scene hierarchy for modular level design and asset reuse. |
@@ -42,7 +58,7 @@
 
 ---
 
-### 👤 Author
+## 👤 Author
 **Youssef Alkamashany**
 * 🚀 **Aspiring MLOps/LLMOps & AI Data Engineer**.
 * 💼 Team Leader — Microsoft Data Engineering | Digital Egypt Pioneers Initiative (DEPI).
@@ -51,4 +67,5 @@
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Youssef-Alkamashany)
 
 ---
+
 <p align="center">"Where order fails, the Paradox begins." 🌀🕹️</p>
